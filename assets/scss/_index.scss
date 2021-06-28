@@ -1,0 +1,35 @@
+/***********
+
+Css - Index
+
+************/
+
+/*padding en la parte superior para lograr centrar los textos con la imagen de fondo*/
+.tituloPrincipal h2 {
+    padding-top: 220px;
+}
+
+.fondoIndex {
+    background-image: url(../imagenes/imagen-fondo-2.jpg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;   
+}
+
+/* estilo de título principal*/
+.tituloPrincipal {
+    height: 600px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 40px;
+}
+.tituloPrincipal h2 {
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+/*texto debajo del título*/
+.textoDosTitulo {
+    font-size: 17px;
+    color: #5b95e0;
+    font-weight: 400;
+}

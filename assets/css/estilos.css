@@ -1,0 +1,568 @@
+@charset "UTF-8";
+/* ESTILO PARA TODA LAS PÁGINAS: reseteo - establecer familia tipográfica */
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box; }
+
+body {
+  background-color: #F2EFE9; }
+
+/***********
+
+Css - Index
+
+************/
+/*padding en la parte superior para lograr centrar los textos con la imagen de fondo*/
+.tituloPrincipal h2 {
+  padding-top: 220px; }
+
+.fondoIndex {
+  background-image: url(../imagenes/imagen-fondo-2.jpg);
+  background-size: 100vw 100vh;
+  background-attachment: fixed; }
+
+/* estilo de título principal*/
+.tituloPrincipal {
+  height: 600px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 40px; }
+
+.tituloPrincipal h2 {
+  font-weight: 700;
+  font-size: 4rem; }
+
+/*texto debajo del título*/
+.textoDosTitulo {
+  font-size: 17px;
+  color: #5b95e0;
+  font-weight: 400; }
+
+/***********
+
+Css - NAV
+
+************/
+header {
+  position: relative;
+  background-color: #212529;
+  width: 100%;
+  height: 20vh; }
+
+nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+/* Logo */
+.logo {
+  width: 65%;
+  margin-left: 20px;
+  padding-bottom: 10px; }
+
+.barBtn {
+  font-size: 25px;
+  color: #fff;
+  margin-right: 20px;
+  cursor: pointer; }
+
+.menu {
+  position: fixed;
+  width: 100%;
+  height: 0vh;
+  top: 107px;
+  background: rgba(0, 0, 0, 0.95);
+  text-align: center;
+  transition: all .5s; }
+
+.menu li {
+  display: none;
+  line-height: 30px;
+  margin: 50px 0;
+  transition: all .5s; }
+
+.menu li a {
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 600; }
+
+.menu li a.active, .menu li a:hover {
+  color: #3e8dfa;
+  transition: .3s; }
+
+#check {
+  display: none; }
+
+#check:checked ~ .menu {
+  height: 100vh; }
+
+#check:checked ~ .menu li {
+  display: block; }
+
+/* Titulo principal de página */
+.textoHeader {
+  background-color: #212529;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 700;
+  margin: 0; }
+
+/***********
+
+Css - Footer
+
+************/
+.container {
+  max-width: 1170px;
+  margin: auto; }
+
+.row {
+  display: flex;
+  flex-wrap: wrap; }
+
+ul {
+  list-style: none; }
+
+.footer {
+  background-color: #24262b;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 40px; }
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px; }
+
+.footer-col h3 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative; }
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative; }
+
+.footer-col h3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #3e8dfa;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px; }
+
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #3e8dfa;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px; }
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px; }
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease; }
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px; }
+
+.footer-col .redesSociales a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease; }
+
+.footer-col .redesSociales a:hover {
+  color: #24262b;
+  background-color: #ffffff; }
+
+.contacto {
+  color: #bbbbbb; }
+
+.contactoMail {
+  color: #bbbbbb;
+  font-size: 15px; }
+
+/* Padding para dejar espacio entre los íconos y el texto */
+.fa-map-marker-alt {
+  padding-right: 14px; }
+
+.fa-envelope {
+  padding-right: 10px; }
+
+.textoFooter {
+  color: #ffffff;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 14px; }
+
+/* Estilos para último texto del footer */
+.github {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color .2s; }
+
+.github:hover {
+  color: #3e8dfa; }
+
+/***********
+
+Css - Contacto
+
+************/
+/* Imagen de fondo */
+.fondoContacto {
+  background-image: url(../imagenes/fondo-contacto.png);
+  background-size: 100vw;
+  background-attachment: fixed; }
+
+/* Titulo principal "Contactame" */
+.tituloContacto {
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center;
+  padding: 0px; }
+
+/* Margenes para formularios de contacto */
+.formDeContacto {
+  width: 450px;
+  margin: auto;
+  margin-top: 30px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  border-radius: 15px; }
+
+/* Estilos para el botón */
+.boton {
+  border: 1px solid #041546;
+  padding: 8px;
+  background-color: #041546;
+  color: #ffffff;
+  border-radius: 30px;
+  transition: background-color .4s;
+  font-size: 1em;
+  cursor: pointer; }
+
+.boton:hover {
+  background-color: #3e8dfa; }
+
+/* Estilos para los elementos dentro del formulario */
+label {
+  display: block;
+  margin: 10px 0px;
+  color: #ffffff; }
+
+input {
+  width: 100%;
+  padding-top: 6px;
+  padding-bottom: 6px; }
+
+textarea {
+  resize: none;
+  width: 100%;
+  margin-top: 30px; }
+
+/***********
+
+Css - Sobre mi
+
+************/
+.contenedor {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-template-areas: ". subtitulo subtitulo" "imagen bio bio"; }
+
+/* Contenedor de imagen */
+.box {
+  width: 400px;
+  height: 300px; }
+
+/* Estilos de imagen */
+.imagen {
+  width: 100%;
+  height: 100%;
+  margin-left: 20px;
+  margin-bottom: 40px;
+  grid-area: imagen; }
+
+.imagen img {
+  border-radius: 10px; }
+
+/* Margen de los textos y el título */
+.subtitulo {
+  margin-top: 25px;
+  font-weight: 600;
+  grid-area: subtitulo; }
+
+.bio {
+  width: 80%;
+  grid-area: bio; }
+
+/***********
+
+Css - Trabajos
+
+************/
+/* Titulo principal "Últimos trabajos" */
+.tituloDePagina {
+  color: #041546;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 800; }
+
+/* Título secundario "Edits de fútbol" */
+.edits {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 800;
+  padding: 20px; }
+
+/* Márgenes para imágenes y videos dentro de "Trabajos" */
+.multimedia {
+  margin-left: 40px;
+  margin-top: 20px;
+  margin-bottom: 40px; }
+
+/* Texto que indica el título de cada imagen o video */
+.textoMultimedia {
+  margin-left: 40px;
+  font-style: italic; }
+
+/* Estilos de imagenes y sus textos */
+.imagenesTrabajos {
+  margin: 0 auto;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-auto-rows: auto;
+  gap: 20px;
+  font-family: sans-serif;
+  padding-top: 30px; }
+
+.imagenesTrabajos * {
+  box-sizing: border-box; }
+
+.imagenTrabajo {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px; }
+
+.contenidoImagen {
+  line-height: 1.5;
+  font-size: 0.9em;
+  padding: 15px;
+  background: #fafafa;
+  border-radius: 10px; }
+
+.tituloFoto {
+  font-weight: 600;
+  text-align: center; }
+
+/* Inicio de Mobile first */
+/* MOBILE */
+@media screen and (max-width: 480px) {
+  header {
+    position: relative;
+    background-color: #212529;
+    width: 100%;
+    height: 20vh; }
+  nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  /* Logo */
+  .logo {
+    width: 65%;
+    margin-left: 20px;
+    padding-bottom: 10px; }
+  /* Menú de navegación */
+  .barBtn {
+    font-size: 25px;
+    color: #fff;
+    margin-right: 20px;
+    cursor: pointer; }
+  .menu {
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 107px;
+    background: rgba(0, 0, 0, 0.95);
+    text-align: center;
+    transition: all .5s; }
+  .menu li {
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all .5s; }
+  .menu li a {
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 600; }
+  .menu li a.active, .menu li a:hover {
+    color: #3e8dfa;
+    transition: .3s; }
+  #check {
+    display: none; }
+  #check:checked ~ .menu {
+    height: 100vh; }
+  #check:checked ~ .menu li {
+    display: block; }
+  /* Footer */
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px; }
+  .footer {
+    margin-top: 0px; }
+  .contactoMail {
+    font-size: 10px; }
+  .tituloDePagina {
+    padding-top: 20px; }
+  /* Trabajos */
+  .imagenesTrabajos {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); }
+  /* Skills */
+  .skillsUno {
+    padding-left: 86px;
+    padding-right: 86px;
+    justify-content: center; }
+  .skillsDos {
+    padding-left: 86px;
+    padding-right: 86px;
+    justify-content: center; }
+  /* Contacto */
+  .formDeContacto {
+    width: 100%; }
+  /* Sobre mí */
+  .contenedor {
+    display: grid;
+    grid-column-gap: 0px;
+    grid-template-areas: "imagen imagen imagen" "subtitulo subtitulo subtitulo" "bio bio bio";
+    padding-left: 30px;
+    padding-bottom: 40px; }
+  .imagen {
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 0px; } }
+
+/* TABLET */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .logo {
+    width: 75%; }
+  .footer-col {
+    padding-bottom: 10px; }
+  .contactoMail {
+    font-size: 14px; }
+  .imagenesTrabajos {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); }
+  .tituloDePagina {
+    padding-top: 20px; }
+  .skillsUno {
+    justify-content: space-around; }
+  .skillsDos {
+    justify-content: space-around; } }
+
+@media screen and (min-width: 769px) {
+  .logo {
+    margin-left: 50px; }
+  header {
+    width: 100%; }
+  .nav {
+    height: 100px; }
+  .barBtn {
+    display: none; }
+  .menu {
+    position: relative;
+    height: 100px;
+    top: 0;
+    transition: none;
+    text-align: right;
+    margin-right: 50px;
+    background: none; }
+  .menu li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 20px;
+    transition: none; }
+  .menu li a {
+    font-size: 1em; }
+  .skillsUno {
+    padding-left: 200px;
+    padding-right: 200px;
+    justify-content: space-between; }
+  .skillsDos {
+    padding-left: 200px;
+    padding-right: 200px;
+    justify-content: space-between; }
+  .tituloDePagina {
+    padding-top: 20px; } }
+
+/***********
+
+Css - Skills
+
+************/
+/* Titulo principal "Skills" */
+.tituloDePaginaSkills {
+  color: #041546;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 20px; }
+
+.tituloSkills {
+  font-size: 1.7em;
+  font-weight: 600;
+  text-align: center; }
+
+.skillsUno {
+  background-color: #F2EFE9;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.skillsDos {
+  background-color: #dfdcd5;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  flex-wrap: wrap; }

@@ -1,0 +1,222 @@
+/* Inicio de Mobile first */
+
+/* MOBILE */
+@media screen and (max-width: 480px){
+    header {
+        position: relative;
+        background-color: #212529;
+        width: 100%;
+        height: 20vh;
+    }
+    
+    nav {
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    /* Logo */
+    .logo {
+        width: 65%;
+        margin-left: 20px;
+        padding-bottom: 10px;
+        }
+    
+    /* Menú de navegación */
+    .barBtn {
+        font-size: 25px;
+        color: #fff;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 0vh;
+        top: 107px;
+        background: rgba(0,0,0, .95);
+        text-align: center;
+        transition: all .5s;
+    }
+    
+    .menu li {
+        display: none;
+        line-height: 30px;
+        margin: 50px 0;
+        transition: all .5s;
+    }
+    
+    .menu li a {
+        color: #fff;
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+    
+    .menu li a.active, .menu li a:hover {
+        color: #3e8dfa;
+        transition: .3s;
+    }
+    
+    #check {
+        display: none;
+    }
+    
+    #check:checked ~ .menu {
+        height: 100vh;
+    }
+    
+    #check:checked ~ .menu li {
+        display: block;
+    }
+
+    /* Footer */
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .footer {
+        margin-top: 0px;
+    }
+
+    .contactoMail {
+        font-size: 10px;
+    }
+
+    .tituloDePagina {
+        padding-top: 20px;
+    }
+
+    /* Trabajos */
+    .imagenesTrabajos {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    }
+
+
+    /* Skills */
+    .skillsUno {
+        padding-left: 86px;
+        padding-right: 86px;
+        justify-content: center;
+    }
+
+    .skillsDos {
+        padding-left: 86px;
+        padding-right: 86px;
+        justify-content: center;
+    }
+
+
+    /* Contacto */
+    .formDeContacto {
+        width: 100%;
+    }
+
+    /* Sobre mí */
+    .contenedor {
+        display: grid;
+        grid-column-gap: 0px;
+        grid-template-areas: "imagen imagen imagen"
+                              "subtitulo subtitulo subtitulo"
+                              "bio bio bio";
+        padding-left: 30px;
+        padding-bottom: 40px;
+    }
+
+    .imagen {
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+}
+  
+
+/* TABLET */
+@media only screen and (min-width: 481px) and (max-width:768px) {
+    .logo {
+        width: 75%;
+    }
+
+    .footer-col {
+        padding-bottom: 10px;
+    }
+
+    .contactoMail {
+        font-size: 14px;
+    }
+
+    .imagenesTrabajos {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    }
+
+    .tituloDePagina {
+        padding-top: 20px;
+    }
+
+    .skillsUno {
+        justify-content: space-around;
+    }
+
+    .skillsDos {
+        justify-content: space-around;
+    }
+
+}
+
+@media screen and (min-width: 769px) {
+    .logo {
+        margin-left: 50px;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .nav {
+        height: 100px;
+    }
+
+    .barBtn {
+        display: none;
+    }
+
+    .menu {
+        position: relative;
+        height: 100px;
+        top: 0;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+        background: none;
+    }
+
+    .menu li {
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 20px;
+        transition: none;
+    }
+
+    .menu li a {
+        font-size: 1em;
+    }
+
+    .skillsUno {
+        padding-left: 200px;
+        padding-right: 200px;
+        justify-content: space-between;
+    }
+
+    .skillsDos {
+        padding-left: 200px;
+        padding-right: 200px;
+        justify-content: space-between;
+    }
+
+    .tituloDePagina {
+        padding-top: 20px;
+    }
+}

@@ -1,0 +1,66 @@
+/***********
+
+Css - Contacto
+
+************/
+
+/* Imagen de fondo */
+.fondoContacto {
+    background-image: url(../imagenes/fondo-contacto.png);
+    background-size: 100vw;
+    background-attachment: fixed;
+}
+
+/* Titulo principal "Contactame" */
+.tituloContacto {
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center;
+    padding: 0px;
+}
+
+/* Margenes para formularios de contacto */
+.formDeContacto {
+    width: 450px;
+    margin: auto;
+    margin-top: 30px;
+    background: rgba(0,0,0,0.4);
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+/* Estilos para el botón */
+.boton {
+    border: 1px solid #041546;
+    padding: 8px;
+    background-color: #041546;
+    color: #ffffff;
+    border-radius: 30px;
+    transition: background-color .4s;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #3e8dfa;
+}
+
+
+/* Estilos para los elementos dentro del formulario */
+label {
+    display: block;
+    margin: 10px 0px;
+    color: #ffffff;
+}
+
+input {
+    width: 100%;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    margin-top: 30px;
+}

@@ -1,0 +1,85 @@
+
+/***********
+
+Css - NAV
+
+************/
+
+header {
+    position: relative;
+    background-color: #212529;
+    width: 100%;
+    height: 20vh;
+}
+
+nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    width: 65%;
+    margin-left: 20px;
+    padding-bottom: 10px;
+    }
+
+.barBtn {
+    font-size: 25px;
+    color: #fff;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.menu {
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 107px;
+    background: rgba(0,0,0, .95);
+    text-align: center;
+    transition: all .5s;
+}
+
+.menu li {
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all .5s;
+}
+
+.menu li a {
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.menu li a.active, .menu li a:hover {
+    color: #3e8dfa;
+    transition: .3s;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ .menu {
+    height: 100vh;
+}
+
+#check:checked ~ .menu li {
+    display: block;
+}
+
+/* Titulo principal de página */
+.textoHeader {
+    background-color: #212529;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 700;
+    margin: 0;
+}

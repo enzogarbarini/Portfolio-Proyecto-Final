@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--título de mi página-->
+        <title>Sobre Mi - Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!-- etiquetas SEO -->
+        <meta name="description" content="Biografía de Enzo Garbarini, estudiante de diseño gráfico">
+        <!-- Keywords -->
+        <meta name="keywords" content="PORTFOLIO, DISEÑO, DISEÑO GRÁFICO, SOBRE MÍ, PHOTOSHOP, ADOBE ILLUSTRATOR">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,800;0,900;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+        <!-- Icons --> 
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">    
+        <!-- Css -->
+        <link rel="stylesheet" href="../assets/css/estilos.css">
+    </head>
+    <body>  
+        <header>
+            <!--título de header-->
+            <h1 class="textoHeader">Sobre mí</h1>
+            <!--menú de navegación-->
+            <nav class="navegacion">
+                <div>
+                    <!--Logo-->
+                    <a href="./index.html"><img class="logo" src="../img/Logo-web.png" alt="logo"></a>
+                </div>
+                <input type="checkbox" id="check">
+                <label for="check" class="barBtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul class="menu">   
+                    <!--menú de navegación-->       
+                    <!--página de inicio-->
+                    <li><a href="../index.html"> Inicio</a></li>               
+                    <!--página sobre mi-->
+                    <li><a class="active" href="../views/sobre-mi.html">Sobre mí</a></li>              
+                    <!--página trabajos-->
+                    <li><a href="../views/trabajos.html">Trabajos</a></li>             
+                    <!--página skills-->
+                    <li><a href="../views/skills.html">Skills</a></li>
+                    <!--página contacto-->
+                    <li><a href="../views/contacto.html">Contacto</a></li>
+                </ul>
+              </nav>
+        </header>        
+
+        <main>
+            <!-- Título de página -->
+            <h2 class="tituloDePagina">Sobre mí</h2>       
+            <div class="contenedor">
+                    <h3 class="subtitulo">Soy Enzo Garbarini</h3>
+                        <div class="imagen">
+                            <!-- Imagen -->
+                            <img src="../img/img-sm.jpg" alt="Imagen de Enzo Garbarini">
+                        </div>               
+                    <!-- Subtitulo y biografía -->    
+                    <p class="bio">
+                        Soy un estudiante de diseño gráfico, creativo y responsable. Me considero detallista y autodidacta. Además bueno para el trabajo en equipo y con muchas ganas de aprender.
+                    </p>
+            </div>    
+        </main>
+            
+        <!--comienzo de footer-->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Navegación</h4>
+                        <ul>
+                            <li><a href="../index.html">Inicio</a></li>
+                            <li><a href="#">Sobre mí</a></li>
+                            <li><a href="../views/trabajos.html">Trabajos</a></li>
+                            <li><a href="../views/skills.html">Skills</a></li>
+                            <li><a href="../views/contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contacto</h4>
+                        <ul>
+                            <li class="contacto"><i class="fas fa-map-marker-alt"></i>Junín, Buenos Aires, Argentina.</li>
+                            <li class="contactoMail"><i class="fas fa-envelope"></i>enzogarbarini@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Redes sociales</h4>
+                        <div class="redesSociales">
+                            <a href="https://www.linkedin.com/in/enzogarbarini/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.behance.net/enzogarbarini1" target="_blank"><i class="fab fa-behance"></i>
+                            <a href="https://www.instagram.com/enzogarbarini" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="textoFooter">Sitio desarrollado por <a href="https://github.com/enzogarbarini" target="_blank" class="github">Enzo Garbarini</a></p>
+        </footer>
+    </body>
+</html>
